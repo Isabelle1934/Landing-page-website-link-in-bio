@@ -5,19 +5,19 @@
   box-sizing: border-box;
 }
 
+/* Body */
 body {
   background: url(./assetss/backgroundp.png) no-repeat top center/cover;
   font-family: "Cinzel Decorative", serif;
-  color: #CFA07D; /* cor do texto */
-  
-  /* Centralização */
+  color: #CFA07D;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   min-height: 100vh;
   text-align: center;
 }
 
+/* Container principal */
 #container {
   width: 360px;
   display: flex;
@@ -33,7 +33,7 @@ body {
 
 #profile img {
   width: 112px;
-  border-radius: 50%; /* deixa redondo */
+  border-radius: 50%;
   display: block;
   margin: 0 auto;
   object-fit: cover;
@@ -53,31 +53,80 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 16px;
   background: rgba(248, 247, 244, 0.9);
   border: 1px solid #CFA07D;
   border-radius: 8px;
-
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-
   text-decoration: none;
   font-weight: 500;
-  color: #CFA07D; /* cor do texto nos botões */
+  color: #CFA07D;
   transition: all 0.2s ease-in-out;
 }
 
 ul li a:hover {
   background: #CFA07D;
   border: 1.5px solid #5C2A3D;
-  color: #fff; /* contraste no hover */
+  color: #fff;
 }
 
-/* Rodapé */
-footer {
-  padding: 8px 0;
+h3 {
+  padding-top: 0.5px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  width: 1000px;
+  font-style: normal;
   color: #CFA07D;
 }
+
+/* Footer */
+footer {
+  padding: 8px;
+  text-align: center;
+  font-size: 11px;
+  font-style: italic;
+  color: #CFA07D;
+  margin: 20px 0;
+}
+
+/* Slide único */
+.carousel-single {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 16 / 10; /* 16:10 */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.media-block {
+  width: 100%;
+  height: 100%;
+}
+
+.media-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cobre todo o slide */
+}
+
+/* Setas */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #CFA07D;
+  background: rgba(255,255,255,0.7);
+  padding: 5px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow.left { left: 10px; }
+.arrow.right { right: 10px; }
