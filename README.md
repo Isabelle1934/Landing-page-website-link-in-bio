@@ -36,13 +36,6 @@ Com três opções principais, o usuário pode navegar de forma simples, rápida
 ## 📸 Demonstração  
 👉 (https://isabelle1934.github.io/Aurea-Access/#)  
 
----
-
-## 📌 Como Usar  
-1. Clone este repositório:  
-   ```bash
-   git clone https://github.com/seu-usuario/aurea.git
-
 💡 Personalização
 
 Alterar cores e fontes no style.css.
